@@ -1,0 +1,9 @@
+import java.io.IOException
+
+
+  public class Main {
+        public statuc void main (String [] args) throws IOException{
+            System.out.print("Hello World" +
+            System.lineSeparator());
+        }
+  }
