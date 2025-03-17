@@ -1,0 +1,32 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+       // Criando o objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Leitura das notas A, B e C
+        double A = scanner.nextDouble();
+        double B = scanner.nextDouble();
+        double C = scanner.nextDouble();
+
+        // Pesos das notas
+        double pesoA = 2.0;
+        double pesoB = 3.0;
+        double pesoC = 5.0;
+
+        // Cálculo da média ponderada
+        double MEDIA = (A * pesoA + B * pesoB + C * pesoC) / 10.0;
+
+        // Impressão do resultado com 1 casa decimal
+        System.out.printf("MEDIA = %.1f%n", MEDIA);
+
+        // Fechando o Scanner (boa prática)
+        scanner.close();
+ 
+    }
+ 
+}
