@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+
+public class Main {
+     public static void main(String[] args) throws IOException {
+        // Criando o objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Leitura dos valores inteiros
+        int A = scanner.nextInt(); // Linha 8 corrigida
+        int B = scanner.nextInt(); // Linha 10 corrigida
+        
+        // Soma dos valores
+        int X = A + B;
+
+        // Impressão do resultado no formato especificado
+        System.out.println("X = " + X); // Linha 31 corrigida
+        
+        // Fechando o Scanner (boa prática)
+        scanner.close();
+    }
+}
