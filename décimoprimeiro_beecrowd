@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+       Scanner scanner = new Scanner(System.in);
+        
+        // Leitura dos dados da primeira peça
+        int codigo1 = scanner.nextInt();
+        int quantidade1 = scanner.nextInt();
+        double valorUnitario1 = scanner.nextDouble();
+        
+        // Leitura dos dados da segunda peça
+        int codigo2 = scanner.nextInt();
+        int quantidade2 = scanner.nextInt();
+        double valorUnitario2 = scanner.nextDouble();
+        
+        // Cálculo do valor total a pagar
+        double valorTotal = (quantidade1 * valorUnitario1) + (quantidade2 * valorUnitario2);
+        
+        // Exibição do resultado
+        System.out.printf("VALOR A PAGAR: R$ %.2f%n", valorTotal);
+        
+        scanner.close();
+ 
+    }
+ 
+}
